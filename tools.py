@@ -1,9 +1,5 @@
 from crewai_tools import SerperDevTool , WebsiteSearchTool
 
-# os.environ["Gemini_API_KEY"] = "AIzaSyCfMPceVOPwQ5j3Ke9O7SaaOUSIveBrgis"
-# os.environ["SERPER_API_KEY"] = "757f470508a8904d687632677534633ea490fe68b7a528cc3fb3b94cf05b28ee"
-#tools.py
-
 
 
 searchTool = SerperDevTool()
