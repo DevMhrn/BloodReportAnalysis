@@ -2,20 +2,15 @@ from  crewai import Agent
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-from tools import SerperDevTool , WebsiteSearchTool
+from tools import searchTool, websiteSearchTool
 from dotenv import load_dotenv
-
 
 # Load environment variables from the .env file
 load_dotenv()
-
-
 google_api_key = os.getenv("GOOGLE_API_KEY")
 serper_api_key = os.getenv("SERPER_API_KEY")
 
 gemini_model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.7, google_api_key=google_api_key)
-
-
 #agents.py
 researcher_Agent = Agent(
     role='Researcher',

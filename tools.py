@@ -1,10 +1,8 @@
 from crewai_tools import SerperDevTool , WebsiteSearchTool
 
-
-
 searchTool = SerperDevTool()
 
-WebsiteSearchTool = WebsiteSearchTool(
+websiteSearchTool = WebsiteSearchTool(
     config=dict(
         llm=dict(
             provider="google",
@@ -20,8 +18,7 @@ WebsiteSearchTool = WebsiteSearchTool(
                 model="models/embedding-001",
                 task_type="retrieval_document",
             ),
-        ),
-          # Directly provide your Google API key here
+        )
     )
 )
 
