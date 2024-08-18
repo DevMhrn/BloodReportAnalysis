@@ -37,16 +37,17 @@ python main.py
 ```
 Now this is create a report and personalized recommendation based on the given blood report, and links for reference.
 
+*****
 
 ## Approach
-#### As the task was to create the blood analysis report and provide personilized recommendation and articles for references from web. For the given task:
-#### AI Agents
+#### As the task was to create the blood analysis report and provide personilized recommendation and articles for references from web. For the given task approached with the following agents and tasks for result.
+#### AI Agents:
 - **ReportReader_Agent:** Read the report or the text extracted from the pdf remembering all the instruction provided to it.
 - **researcher_Agent:** Researches the about the medical information in the web to collect reliable sources from online.
 - **Analyzer_Agent:** Analyzes the blood report identifying the key compnents to help evaluate the deficiencies and diseases of the person's report.
 - **Recommendation_Agent:** Based on the deficiencies and diseases gives personalized and actionable recommendation for the person's healthy life.
 
-#### Tasks
+#### Tasks:
 Now, when the tasks are operated , it used this agent to make perform the task as per given instruction and generates all the output which is then save in the **Blood Report.md** file.
 
 - **ReportReader Task:** Extract and summarize personal details, test names, values, normal ranges, and significant findings from the blood test report for further analysis.
@@ -54,7 +55,7 @@ Now, when the tasks are operated , it used this agent to make perform the task a
 - **Find Articles from Web Task:** Search for credible medical articles related to abnormal test values, summarize them, and explain their relevance to the blood test results.
 - **Recommendation Task:** Provide clear, actionable health recommendations based on the blood test analysis and related research, including lifestyle changes and possible medical interventions.
 
-
+******
 
 Here are the file's description for better understanding
 ### `main.py`
